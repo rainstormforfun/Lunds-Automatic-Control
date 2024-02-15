@@ -1,0 +1,59 @@
+site_name: Lunds Automatic Control - NOTEs
+site_url: https://example.com/
+nav:
+  - Preface: index.md
+  - Lecture 1: lecture-1.md
+repo_url: https://github.com/rainstormforfun/Lunds-automatic-control
+repo_name: Lunds Auto Ctrl
+theme:
+  font:
+    text: Noto Serif SC
+  icon:
+    repo: fontawesome/brands/github
+  name: "material"
+  language: "zh"
+  features:
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+
+plugins:
+  - search:
+      lang: -ja
+      separator: '[\s\-\.]+'
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+copyright: "Copyright &copy; 2024 - present Rainstorm"
